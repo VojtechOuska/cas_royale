@@ -162,7 +162,12 @@ class Account:
                 
     def inporting_badget(self, account):
         dict_bag=self.sorter_badget_databases_to_dictonary()
+        
+        
         badget=dict_bag[account]        
+        
         return badget  
         
-        
+g1=Account()
+resolut=g1.inporting_badget("Vojtech")       
+print(resolut)
