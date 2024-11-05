@@ -146,6 +146,7 @@ class Account:
         while all_acounts_and_paswords_dictonary[account_name]!=user_password:
             user_password=input("Heslo bohuzel neni spravne.\n zkuste to znovu\nzadejte heslo\n")
         print(f"Vytejte v casinu royale {account_name}")
+        return account_name
 
     # prepisovani bodu uctech
     def badget_updating_function(self, account, actual_badget):
@@ -168,6 +169,3 @@ class Account:
         
         return badget  
         
-g1=Account()
-resolut=g1.inporting_badget("Vojtech")       
-print(resolut)
